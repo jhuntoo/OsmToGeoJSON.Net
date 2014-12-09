@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using GeoJSON.Net.Feature;
 using Newtonsoft.Json;
+using OsmToGeoJSON.Dto;
 using OsmToGeoJSON.Processors;
+using OsmToGeoJSON.Renderer;
 
 namespace OsmToGeoJSON
 {
