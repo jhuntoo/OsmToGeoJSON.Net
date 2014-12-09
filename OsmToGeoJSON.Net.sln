@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OsmToGeoJSON", "OsmToGeoJSO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OsmToGeoJSON.Tests", "OsmToGeoJSON.Tests\OsmToGeoJSON.Tests.csproj", "{97977393-3A95-457A-A330-D5B636E81A73}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoJSON.Net", "GeoJSON.Net\src\GeoJSON.Net\GeoJSON.Net.csproj", "{7C0D45ED-681E-4DEC-9910-BAE1211E4889}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{97977393-3A95-457A-A330-D5B636E81A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97977393-3A95-457A-A330-D5B636E81A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97977393-3A95-457A-A330-D5B636E81A73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C0D45ED-681E-4DEC-9910-BAE1211E4889}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C0D45ED-681E-4DEC-9910-BAE1211E4889}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C0D45ED-681E-4DEC-9910-BAE1211E4889}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C0D45ED-681E-4DEC-9910-BAE1211E4889}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

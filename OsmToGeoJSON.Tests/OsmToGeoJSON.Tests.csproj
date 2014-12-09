@@ -30,12 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GeoJSON.Net">
-      <HintPath>..\packages\GeoJSON.Net.0.0.24\lib\GeoJSON.Net.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Newtonsoft.Json.6.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
@@ -49,10 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GeometryTestBase.cs" />
+    <Compile Include="GeometryTests.cs" />
+    <Compile Include="LineTests.cs" />
+    <Compile Include="MultiPolygonTests.cs" />
+    <Compile Include="NodeTests.cs" />
+    <Compile Include="OverPassTests.cs" />
+    <Compile Include="PolygonTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RelationTests.cs" />
+    <Compile Include="RingOrganiserTests.cs" />
+    <Compile Include="TagClassifierTests.cs" />
+    <Compile Include="Tags.cs" />
+    <Compile Include="TagsPointOfInterestTests.cs" />
+    <Compile Include="TestRelation.cs" />
+    <Compile Include="WayTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoJSON.Net\src\GeoJSON.Net\GeoJSON.Net.csproj">
+      <Project>{7c0d45ed-681e-4dec-9910-bae1211e4889}</Project>
+      <Name>GeoJSON.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OsmToGeoJSON\OsmToGeoJSON.csproj">
+      <Project>{bfb041b7-1173-4f12-8317-6de2cbfa1925}</Project>
+      <Name>OsmToGeoJSON</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
