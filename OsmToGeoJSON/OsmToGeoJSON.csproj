@@ -49,6 +49,7 @@
     <Compile Include="Area.cs" />
     <Compile Include="Bounds.cs" />
     <Compile Include="Cluster.cs" />
+    <Compile Include="ClusterCleanser.cs" />
     <Compile Include="Converter.cs" />
     <Compile Include="Coordinates.cs" />
     <Compile Include="Dto\AreaDto.cs" />
@@ -71,11 +72,22 @@
     <Compile Include="IRingOrganiser.cs" />
     <Compile Include="ITagClassifier.cs" />
     <Compile Include="Node.cs" />
+    <Compile Include="PolygonFeaturesLoader.cs" />
+    <Compile Include="Processors\INodesProcessor.cs" />
+    <Compile Include="Processors\IRelationsProcessor.cs" />
+    <Compile Include="Processors\IWaysProcessor.cs" />
+    <Compile Include="Processors\NodesProcessingResult.cs" />
+    <Compile Include="Processors\NodesProcessor.cs" />
+    <Compile Include="Processors\RelationsProcessingResult.cs" />
+    <Compile Include="Processors\RelationsProcessor.cs" />
+    <Compile Include="Processors\WaysProcessingResult.cs" />
+    <Compile Include="Processors\WaysProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Relation.cs" />
     <Compile Include="RelationMember.cs" />
     <Compile Include="Ring.cs" />
     <Compile Include="RingOrganiser.cs" />
+    <Compile Include="TagClassifier.cs" />
     <Compile Include="Way.cs" />
   </ItemGroup>
   <ItemGroup>

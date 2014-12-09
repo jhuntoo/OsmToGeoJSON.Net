@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using GeoJSON.Net.Feature;
 using Newtonsoft.Json;
-using OsmRegionBoundaryExporter.Good.Domain;
-using OsmRegionBoundaryExporter.Good.Renderers;
-using OsmRegionBoundaryExporter.Json.Domain;
+using OsmToGeoJSON.Processors;
 
-namespace OsmRegionBoundaryExporter.Good
+namespace OsmToGeoJSON
 {
     public class Converter
     {
