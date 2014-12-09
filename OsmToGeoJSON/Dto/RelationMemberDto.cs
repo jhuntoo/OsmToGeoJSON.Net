@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace OsmRegionBoundaryExporter.Good
+namespace OsmToGeoJSON.Dto
 {
     public class RelationMemberDto : ICloneable
     {

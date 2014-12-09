@@ -1,6 +1,5 @@
 using System;
 using Newtonsoft.Json.Linq;
-using OsmRegionBoundaryExporter.Good;
 
 namespace OsmToGeoJSON.Dto
 {

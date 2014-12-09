@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using OsmRegionBoundaryExporter.Good;
 
 namespace OsmToGeoJSON.Dto
 {

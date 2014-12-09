@@ -1,4 +1,4 @@
-namespace OsmRegionBoundaryExporter.Good
+namespace OsmToGeoJSON.Dto
 {
     public class AreaDto : ElementDto
     {
