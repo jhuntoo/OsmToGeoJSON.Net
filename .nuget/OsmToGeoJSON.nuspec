@@ -19,8 +19,7 @@
         </dependencies>
     </metadata>
     <files>
-        <file src="lib\net45\OsmToGeoJSON.dll" target="lib\net45\OsmToGeoJSON.dll" />
-        <file src="OsmToGeoJSON.dll" target="OsmToGeoJSON.dll" />
-        <file src="polygonFeatures.json" target="polygonFeatures.json" />
+        <file src="..\OsmToGeoJSON\bin\Release\OsmToGeoJSON.dll" target="OsmToGeoJSON.dll" />
+        <file src="..\OsmToGeoJSON\bin\Release\polygonFeatures.json" target="polygonFeatures.json" />
     </files>
 </package>
