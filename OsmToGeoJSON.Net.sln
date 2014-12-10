@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B8786E
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
+		.nuget\OsmToGeoJSON.nuspec = .nuget\OsmToGeoJSON.nuspec
+		.nuget\pack.ps1 = .nuget\pack.ps1
 	EndProjectSection
 EndProject
 Global
