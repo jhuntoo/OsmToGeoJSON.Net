@@ -48,6 +48,24 @@ namespace OsmToGeoJSON
             overPassResponse.Elements = overPassResponse.Elements.Where(x => x.Type != "area").ToList();
             return overPassResponse.Elements.Count == 0 ? new FeatureCollection(new List<Feature>())  : OsmToFeatureCollection(overPassResponse);
         }
+
+        public string OsmToGeoJSON(string osmJson)
+        {
+            var featureCollection = OsmToFeatureCollection(osmJson);
+            var serializedData = JsonConvert.SerializeObject(featureCollection, Formatting.Indented, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+            return  Fix(serializedData);
+        }
+
+
+        private static string Fix(string serializedData)
+        {
+            return
+                serializedData.Replace("\\\"", "\"")
+                    .Replace("]\"", "]")
+                    .Replace("\"[", "[")
+                    .Replace("}\"", "}")
+                    .Replace("\"{", "{");
+        }
         public FeatureCollection OsmToFeatureCollection(OverpassResponseDto overPassResponseDto)
         {
             var nodes = new List<Node>();
