@@ -32,6 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GeoJSON.Net, Version=0.0.26.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\GeoJSON.Net.0.0.26\lib\GeoJSON.Net.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -68,10 +72,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GeoJSON.Net\src\GeoJSON.Net\GeoJSON.Net.csproj">
-      <Project>{7c0d45ed-681e-4dec-9910-bae1211e4889}</Project>
-      <Name>GeoJSON.Net</Name>
-    </ProjectReference>
     <ProjectReference Include="..\OsmToGeoJSON\OsmToGeoJSON.csproj">
       <Project>{bfb041b7-1173-4f12-8317-6de2cbfa1925}</Project>
       <Name>OsmToGeoJSON</Name>
