@@ -12,6 +12,7 @@
         <description>A .Net port of osmtogeojson</description>
         <summary>A .Net port of osmtogeojson</summary>
         <copyright>Copyright ©  2014</copyright>
+        <tags>osm osmtogeojson OpenStreetMap Open Street Map GeoJSON Json converter</tags>
         <dependencies>
             <dependency id="Newtonsoft.Json" version="6.0.5" />
             <dependency id="RestSharp" version="105.0.1" />
